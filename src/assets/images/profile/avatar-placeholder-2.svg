@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0a192f" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="195" fill="url(#avatarGrad)" stroke="url(#accentGrad)" stroke-width="4" />
+  
+  <!-- Ambient Tech Ring -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.6" />
+  <circle cx="200" cy="200" r="150" fill="url(#glowGrad)" />
+
+  <!-- Abstract Developer Silhouette & Monogram -->
+  <!-- Head -->
+  <circle cx="200" cy="140" r="48" fill="#e2e8f0" opacity="0.95" />
+  <!-- Shoulders / Torso -->
+  <path d="M120 280 C120 215, 280 215, 280 280 Z" fill="#cbd5e1" opacity="0.9" />
+
+  <!-- Floating Tech Badges -->
+  <!-- C# Badge -->
+  <g transform="translate(60, 110)">
+    <rect width="64" height="32" rx="16" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5" />
+    <text x="32" y="21" fill="#c7d2fe" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">C#</text>
+  </g>
+
+  <!-- .NET Badge -->
+  <g transform="translate(275, 110)">
+    <rect width="64" height="32" rx="16" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="32" y="21" fill="#bae6fd" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">.NET</text>
+  </g>
+
+  <!-- SQL Badge -->
+  <g transform="translate(280, 240)">
+    <rect width="68" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="34" y="21" fill="#38bdf8" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">SQL</text>
+  </g>
+
+  <!-- Clean Monogram Overlay at Bottom -->
+  <g transform="translate(145, 300)">
+    <rect width="110" height="36" rx="18" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="2" />
+    <text x="55" y="24" fill="#f8fafc" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold" letter-spacing="2" text-anchor="middle">RAGAB</text>
+  </g>
+</svg>

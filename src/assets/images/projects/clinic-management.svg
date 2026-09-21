@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b" />
+      <stop offset="100%" stop-color="#1c2541" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="600" height="380" rx="12" fill="url(#bgGrad)" />
+
+  <!-- Top Browser Bar Mockup -->
+  <rect width="600" height="42" fill="#0f172a" rx="12 12 0 0" />
+  <circle cx="24" cy="21" r="6" fill="#ef4444" />
+  <circle cx="44" cy="21" r="6" fill="#f59e0b" />
+  <circle cx="64" cy="21" r="6" fill="#10b981" />
+  <rect x="110" y="10" width="380" height="22" rx="6" fill="#1e293b" />
+  <text x="300" y="25" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11" text-anchor="middle">https://localhost:7001/Clinic/Appointments</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="42" width="140" height="338" fill="#0a1128" />
+  <!-- Logo / Brand -->
+  <rect x="18" y="60" width="24" height="24" rx="6" fill="#06b6d4" />
+  <path d="M30 66 L30 78 M24 72 L36 72" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  <text x="50" y="77" fill="#f1f5f9" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold">ClinicMS</text>
+
+  <!-- Nav Items -->
+  <rect x="12" y="105" width="116" height="28" rx="6" fill="#1e293b" />
+  <text x="24" y="124" fill="#38bdf8" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600">📊 Dashboard</text>
+  <text x="24" y="155" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">👥 Patients</text>
+  <text x="24" y="185" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">👨‍⚕️ Doctors</text>
+  <text x="24" y="215" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">📅 Visits &amp; Appts</text>
+  <text x="24" y="245" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">📑 Medical Records</text>
+  <text x="24" y="275" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">💳 Invoices &amp; Pay</text>
+
+  <!-- Main Content Area -->
+  <!-- Stats Header Cards -->
+  <rect x="156" y="58" width="98" height="60" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="168" y="78" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Total Patients</text>
+  <text x="168" y="104" fill="#f8fafc" font-family="Segoe UI, sans-serif" font-size="18" font-weight="bold">1,248</text>
+
+  <rect x="264" y="58" width="98" height="60" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="276" y="78" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Active Doctors</text>
+  <text x="276" y="104" fill="#38bdf8" font-family="Segoe UI, sans-serif" font-size="18" font-weight="bold">32</text>
+
+  <rect x="372" y="58" width="98" height="60" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="384" y="78" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Appointments</text>
+  <text x="384" y="104" fill="#10b981" font-family="Segoe UI, sans-serif" font-size="18" font-weight="bold">98 Today</text>
+
+  <rect x="480" y="58" width="104" height="60" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="492" y="78" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10">Revenue</text>
+  <text x="492" y="104" fill="#f59e0b" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold">EGP 84.5K</text>
+
+  <!-- Main Table View -->
+  <rect x="156" y="132" width="428" height="230" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="174" y="158" fill="#f8fafc" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold">Recent Appointments &amp; Billing Workflow</text>
+
+  <!-- Table Header -->
+  <rect x="168" y="172" width="404" height="24" rx="4" fill="#1e293b" />
+  <text x="180" y="188" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600">PATIENT</text>
+  <text x="280" y="188" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600">DEPARTMENT</text>
+  <text x="385" y="188" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600">STATUS</text>
+  <text x="495" y="188" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600">INVOICE</text>
+
+  <!-- Table Rows -->
+  <text x="180" y="216" fill="#f1f5f9" font-family="Segoe UI, sans-serif" font-size="11">Khaled Mahmoud</text>
+  <text x="280" y="216" fill="#cbd5e1" font-family="Segoe UI, sans-serif" font-size="11">Cardiology</text>
+  <rect x="385" y="204" width="62" height="18" rx="9" fill="#065f46" />
+  <text x="416" y="217" fill="#6ee7b7" font-family="Segoe UI, sans-serif" font-size="9" text-anchor="middle">Completed</text>
+  <text x="495" y="216" fill="#10b981" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600">Paid ($75)</text>
+
+  <line x1="168" y1="228" x2="572" y2="228" stroke="#334155" stroke-width="0.5" />
+
+  <text x="180" y="248" fill="#f1f5f9" font-family="Segoe UI, sans-serif" font-size="11">Sara Ibrahim</text>
+  <text x="280" y="248" fill="#cbd5e1" font-family="Segoe UI, sans-serif" font-size="11">Pediatrics</text>
+  <rect x="385" y="236" width="62" height="18" rx="9" fill="#1e3a8a" />
+  <text x="416" y="249" fill="#93c5fd" font-family="Segoe UI, sans-serif" font-size="9" text-anchor="middle">In Visit</text>
+  <text x="495" y="248" fill="#f59e0b" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600">Pending</text>
+
+  <line x1="168" y1="260" x2="572" y2="260" stroke="#334155" stroke-width="0.5" />
+
+  <text x="180" y="280" fill="#f1f5f9" font-family="Segoe UI, sans-serif" font-size="11">Ahmed Hassan</text>
+  <text x="280" y="280" fill="#cbd5e1" font-family="Segoe UI, sans-serif" font-size="11">Orthopedics</text>
+  <rect x="385" y="268" width="62" height="18" rx="9" fill="#312e81" />
+  <text x="416" y="281" fill="#c7d2fe" font-family="Segoe UI, sans-serif" font-size="9" text-anchor="middle">Scheduled</text>
+  <text x="495" y="280" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="11">Scheduled</text>
+
+  <!-- Technology Badges at Bottom -->
+  <g transform="translate(170, 318)">
+    <rect width="92" height="24" rx="12" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <text x="46" y="16" fill="#c7d2fe" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">ASP.NET MVC</text>
+  </g>
+  <g transform="translate(270, 318)">
+    <rect width="60" height="24" rx="12" fill="#0f2942" stroke="#38bdf8" stroke-width="1" />
+    <text x="30" y="16" fill="#7dd3fc" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">EF Core</text>
+  </g>
+  <g transform="translate(338, 318)">
+    <rect width="82" height="24" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="1" />
+    <text x="41" y="16" fill="#cbd5e1" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">SQL Server</text>
+  </g>
+  <g transform="translate(428, 318)">
+    <rect width="50" height="24" rx="12" fill="#1e1b4b" stroke="#a855f7" stroke-width="1" />
+    <text x="25" y="16" fill="#d8b4fe" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">C#</text>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" role="img" aria-labelledby="title desc">
+  <title id="title">FortiGate configuration backup automation</title>
+  <desc id="desc">A visual workflow showing a firewall configuration being encrypted and saved to scheduled backups.</desc>
+  <defs>
+    <linearGradient id="fg-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081426"/>
+      <stop offset="1" stop-color="#152444"/>
+    </linearGradient>
+    <linearGradient id="fg-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="fg-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#fg-bg)"/>
+  <circle cx="505" cy="70" r="120" fill="#4338ca" opacity=".12"/>
+  <circle cx="90" cy="340" r="125" fill="#0284c7" opacity=".1"/>
+
+  <text x="42" y="58" fill="#f8fafc" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Configuration Backup</text>
+  <text x="42" y="82" fill="#94a3b8" font-family="Segoe UI,Arial,sans-serif" font-size="13">Scheduled • Repeatable • Recovery-ready</text>
+
+  <g transform="translate(45 125)">
+    <rect width="150" height="142" rx="16" fill="#0f1f38" stroke="#334155"/>
+    <rect x="25" y="28" width="100" height="63" rx="8" fill="#111827" stroke="#ef4444" stroke-width="2"/>
+    <path d="M43 45h64v29H43z" fill="none" stroke="#f87171" stroke-width="2"/>
+    <path d="M59 45v29M75 45v29M91 45v29M43 59h64" stroke="#f87171" stroke-width="1.5" opacity=".8"/>
+    <circle cx="45" cy="109" r="4" fill="#10b981"/>
+    <circle cx="61" cy="109" r="4" fill="#38bdf8"/>
+    <circle cx="77" cy="109" r="4" fill="#f59e0b"/>
+    <text x="75" y="131" text-anchor="middle" fill="#cbd5e1" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">FortiGate</text>
+  </g>
+
+  <g fill="none" stroke="url(#fg-accent)" stroke-width="3" stroke-linecap="round">
+    <path d="M212 196h70"/>
+    <path d="m270 186 12 10-12 10"/>
+  </g>
+  <g transform="translate(294 144)" filter="url(#fg-glow)">
+    <circle cx="52" cy="52" r="47" fill="#12213c" stroke="#38bdf8"/>
+    <path d="M52 26v26l18 11" fill="none" stroke="#7dd3fc" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="52" cy="52" r="4" fill="#38bdf8"/>
+  </g>
+  <text x="346" y="258" text-anchor="middle" fill="#cbd5e1" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">Scheduled Task</text>
+
+  <g fill="none" stroke="url(#fg-accent)" stroke-width="3" stroke-linecap="round">
+    <path d="M404 196h48"/>
+    <path d="m440 186 12 10-12 10"/>
+  </g>
+  <g transform="translate(465 128)">
+    <rect width="95" height="120" rx="14" fill="#0f1f38" stroke="#6366f1"/>
+    <path d="M25 37h45v44H25z" fill="#172554" stroke="#a5b4fc" stroke-width="2"/>
+    <path d="M35 37v-8a13 13 0 0 1 26 0v8" fill="none" stroke="#a5b4fc" stroke-width="3"/>
+    <path d="M47 54v12" stroke="#c7d2fe" stroke-width="4" stroke-linecap="round"/>
+    <text x="47.5" y="103" text-anchor="middle" fill="#cbd5e1" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600">Backup</text>
+  </g>
+
+  <g transform="translate(42 304)">
+    <rect width="120" height="30" rx="15" fill="#082f49" stroke="#0ea5e9"/>
+    <text x="60" y="20" text-anchor="middle" fill="#bae6fd" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700">PYTHON</text>
+    <rect x="132" width="132" height="30" rx="15" fill="#172554" stroke="#6366f1"/>
+    <text x="198" y="20" text-anchor="middle" fill="#c7d2fe" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700">POWERSHELL</text>
+    <rect x="276" width="142" height="30" rx="15" fill="#064e3b" stroke="#10b981"/>
+    <text x="347" y="20" text-anchor="middle" fill="#a7f3d0" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700">SAFE RECOVERY</text>
+  </g>
+</svg>
