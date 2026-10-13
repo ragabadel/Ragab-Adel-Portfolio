@@ -1,13 +1,14 @@
 # Ragab Adel | Junior .NET Developer Portfolio
 
-A modern personal portfolio built with **Angular**, **TypeScript**, and **SCSS**. It positions Ragab Adel as a **Junior .NET Developer transitioning from IT support and infrastructure into software development**, while retaining hands-on experience in Windows Server, networking, FortiGate, CCTV/NVR, Python, and PowerShell as a practical advantage.
+A personal portfolio built with **Angular**, **TypeScript**, and **SCSS**. Its content follows Ragab Adel's CV: Junior .NET development with C#, ASP.NET Core MVC, Web API, Entity Framework Core, SQL Server, and REST, plus hands-on Windows Server, Fortinet FortiGate, networking, systems support, POS, and CCTV/NVR experience. The portfolio targets Junior .NET, Backend Developer, System Administrator, and Firewall Administrator opportunities.
 
 ---
 
 ## 🚀 Key Highlights & Architecture
 
-- **Balanced Professional Positioning**: The content reflects current infrastructure responsibilities, automation work, and an active .NET development path without overstating unverified technologies.
+- **Evidence-Based Multi-Role Positioning**: Technical claims remain limited to documented experience while clearly presenting .NET, system administration, and firewall administration career targets.
 - **Modern Angular Architecture**: Built with Angular standalone components, TypeScript strict typing, and zero unnecessary external dependencies.
+- **Search-Friendly Static Rendering**: The production build prerenders the complete portfolio into crawlable HTML and includes metadata, ProfilePage structured data, and `robots.txt`.
 - **Centralized Portfolio Data**: Profile details, links, skills, projects, experience, education, and CV paths are maintained in one typed file.
 - **Interactive WhatsApp Integration**: High-visibility WhatsApp buttons and a persistent floating WhatsApp widget with pulsing animation linked directly to `https://wa.me/201149120925`.
 - **Synchronized CV Delivery**: Direct download of the current PDF (`Ragab-Adel-CV.pdf`), with an editable DOCX source stored beside it.
@@ -26,10 +27,10 @@ Ragab-Adel-Portfolio/
 │   │   │   ├── navbar/               # Sticky navbar with active link indicator & mobile drawer
 │   │   │   ├── hero/                 # Hero headline, CTAs, tech stack badges, profile visual
 │   │   │   ├── about/                # Story, engineering highlights, quick facts
-│   │   │   ├── skills/               # Infrastructure, automation, support, and development skills
-│   │   │   ├── projects/             # .NET projects, IT automation, filters, and details modal
+│   │   │   ├── skills/               # CV-verified development and technical skills
+│   │   │   ├── projects/             # .NET MVC and Web API projects
 │   │   │   ├── experience/           # Vertical timeline (CTP, Aman Investment, RadioShack)
-│   │   │   ├── education/            # Degree, Microsoft certs, CLS cert, Languages
+│   │   │   ├── education/            # Degree, CLS training, coursework, and languages
 │   │   │   ├── contact/              # Contact cards, social buttons, quick message composer
 │   │   │   ├── footer/               # Brand, navigation links, copyright
 │   │   │   └── floating-whatsapp/    # Persistent floating WhatsApp button with radar pulse
@@ -51,7 +52,9 @@ Ragab-Adel-Portfolio/
 │   │       ├── profile/              # Profile avatar / photo placeholder
 │   │       └── projects/             # Vector graphic mockups for featured projects
 │   ├── index.html                    # SEO tags, OpenGraph metadata, font preconnects
-│   ├── main.ts                       # Angular standalone bootstrapping entry
+│   ├── main.ts                       # Browser bootstrap entry
+│   ├── main.server.ts                # Build-time prerender entry
+│   ├── robots.txt                    # Search crawler access rules
 │   └── styles.scss                   # Global design system, CSS variables & typography
 ├── angular.json                      # Angular CLI project configuration
 ├── package.json                      # Project dependencies and npm scripts
@@ -103,7 +106,11 @@ npm run check
 npm run build
 ```
 
-The validation command checks TypeScript and verifies that every referenced local asset exists.
+The standard validation checks TypeScript and referenced local assets. The production check also builds the prerendered site and verifies its title, description, rendered H1/content, structured data, robots file, favicon, and CV download.
+
+```bash
+npm run check:production
+```
 
 ---
 
@@ -151,7 +158,7 @@ Replace `src/assets/cv/Ragab-Adel-CV.pdf` and its editable `Ragab-Adel-CV.docx` 
 
 ## 🌐 Deploying to Vercel
 
-The repository includes a pre-configured `vercel.json` file to ensure Single Page Application (SPA) routing works out of the box.
+The repository includes a `vercel.json` file configured for the static prerender output.
 
 ### Method 1: Using GitHub & Vercel Dashboard (Easiest)
 1. Push your project to GitHub:

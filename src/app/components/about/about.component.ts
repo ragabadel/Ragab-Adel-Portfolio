@@ -16,7 +16,7 @@ import { IconComponent } from '../../shared/components/icon.component';
           <span class="section-tag">Profile Overview</span>
           <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
           <p class="section-subtitle">
-            Building a .NET development career on top of practical IT support and infrastructure experience.
+            Software development backed by hands-on systems, firewall, network, and technical support experience.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ import { IconComponent } from '../../shared/components/icon.component';
           <div class="story-column">
             <div class="story-card glass-card">
               <h3 class="story-heading">
-                From IT Infrastructure to .NET Development
+                Development, Systems &amp; Firewall Experience
               </h3>
               
               <div class="story-paragraphs">
@@ -99,15 +99,19 @@ import { IconComponent } from '../../shared/components/icon.component';
               <ul class="value-prop-list">
                 <li>
                   <app-icon name="check-circle" [size]="16" customClass="text-emerald"></app-icon>
-                  <span><strong>Development focus:</strong> I build C# applications and APIs around real workflows, data, validation, and clear structure.</span>
+                  <span><strong>Development focus:</strong> C# applications and APIs using ASP.NET Core, EF Core, SQL Server, and REST.</span>
                 </li>
                 <li>
                   <app-icon name="check-circle" [size]="16" customClass="text-emerald"></app-icon>
-                  <span><strong>Transferable experience:</strong> My IT background strengthens debugging, deployment awareness, security thinking, and user-focused delivery.</span>
+                  <span><strong>System administration:</strong> Windows Server environments, device administration, shared-file access, operating systems, and user support.</span>
                 </li>
                 <li>
                   <app-icon name="check-circle" [size]="16" customClass="text-emerald"></app-icon>
-                  <span><strong>Continuous growth:</strong> I am actively deepening my .NET backend and enterprise application development skills.</span>
+                  <span><strong>Firewall administration:</strong> FortiGate policy configuration and maintenance, network security support, switches, and connectivity troubleshooting.</span>
+                </li>
+                <li>
+                  <app-icon name="check-circle" [size]="16" customClass="text-emerald"></app-icon>
+                  <span><strong>Target roles:</strong> Junior .NET Developer, Backend Developer, System Administrator, and Firewall Administrator.</span>
                 </li>
               </ul>
             </div>

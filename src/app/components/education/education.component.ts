@@ -16,7 +16,7 @@ import { IconComponent } from '../../shared/components/icon.component';
           <span class="section-tag">Academic &amp; Credentials</span>
           <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
           <p class="section-subtitle">
-            Formal information systems background combined with Microsoft-aligned software engineering credentials.
+            Information Systems education with recorded ASP.NET and frontend web development training.
           </p>
         </div>
 
@@ -37,8 +37,7 @@ import { IconComponent } from '../../shared/components/icon.component';
               <p class="edu-details">{{ edu.details }}</p>
               <div class="edu-focus-pills">
                 <span class="tech-tag">Information Systems</span>
-                <span class="tech-tag">Database Architecture</span>
-                <span class="tech-tag">Software Engineering</span>
+                <span class="tech-tag">Completed {{ edu.period }}</span>
               </div>
             </div>
 
@@ -65,7 +64,7 @@ import { IconComponent } from '../../shared/components/icon.component';
           <div class="certifications-column">
             <h3 class="column-title">
               <app-icon name="shield-check" [size]="20" customClass="text-accent"></app-icon>
-              <span>Professional Certifications</span>
+              <span>Training &amp; Coursework</span>
             </h3>
 
             <div class="certs-list">
@@ -79,6 +78,10 @@ import { IconComponent } from '../../shared/components/icon.component';
                     <span class="cert-issuer">{{ cert.issuer }}</span>
                     <span class="cert-divider">•</span>
                     <span class="cert-type">{{ cert.credentialType }}</span>
+                    <ng-container *ngIf="cert.date">
+                      <span class="cert-divider">•</span>
+                      <span class="cert-type">{{ cert.date }}</span>
+                    </ng-container>
                   </div>
                 </div>
               </div>
@@ -92,7 +95,7 @@ import { IconComponent } from '../../shared/components/icon.component';
               <div class="military-content">
                 <span class="military-label">Military Service</span>
                 <span class="military-status">Completed (March 2021)</span>
-                <p class="military-desc">Fully discharged and eligible for immediate full-time employment &amp; international remote engagement.</p>
+                <p class="military-desc">Military service completed in March 2021.</p>
               </div>
             </div>
           </div>

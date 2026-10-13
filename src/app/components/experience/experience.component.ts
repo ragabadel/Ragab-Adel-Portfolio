@@ -14,9 +14,9 @@ import { IconComponent } from '../../shared/components/icon.component';
         <!-- Section Header -->
         <div class="section-header">
           <span class="section-tag">Career History</span>
-          <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
           <p class="section-subtitle">
-            Hands-on support across networks, Windows infrastructure, security appliances, CCTV/NVR systems, endpoints, and operational automation.
+            IT helpdesk and technical support experience across networks, Windows resources, POS devices, FortiGate, and CCTV/NVR systems.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ import { IconComponent } from '../../shared/components/icon.component';
             <app-icon name="shield-check" [size]="24"></app-icon>
           </div>
           <p class="note-text">
-            <strong>What I bring:</strong> Practical infrastructure ownership, structured troubleshooting, clear documentation, and automation that makes recurring technical work safer and easier to repeat.
+            <strong>Role fit:</strong> This hands-on work supports applications for System Administrator and Firewall Administrator positions, alongside Junior .NET and backend roles.
           </p>
         </div>
       </div>

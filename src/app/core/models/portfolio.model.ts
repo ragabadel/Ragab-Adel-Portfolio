@@ -31,7 +31,6 @@ export interface ProfileInfo {
 
 export interface SkillItem {
   name: string;
-  level?: 'Beginner' | 'Intermediate' | 'Advanced';
   featured?: boolean;
 }
 
@@ -54,7 +53,7 @@ export interface ProjectItem {
   demoUrl?: string;
   image: string;
   isFeatured: boolean;
-  category: 'Full Stack' | 'Backend / Web API' | 'IT Automation';
+  category: 'Full Stack' | 'Backend / Web API';
 }
 
 export interface ExperienceItem {

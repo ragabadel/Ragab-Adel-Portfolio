@@ -19,11 +19,11 @@ import { IconComponent } from '../../shared/components/icon.component';
           <span class="section-tag">Featured Work</span>
 
           <h2 class="section-title">
-            Projects &amp; <span class="gradient-text">Automation</span>
+            Development <span class="gradient-text">Projects</span>
           </h2>
 
           <p class="section-subtitle">
-            Practical .NET solutions and infrastructure automation built from real operational needs.
+            C# and ASP.NET Core projects covering MVC workflows, relational data, and REST API design.
           </p>
         </div>
 
@@ -79,6 +79,8 @@ import { IconComponent } from '../../shared/components/icon.component';
                 [src]="project.image"
                 [alt]="project.title + ' preview'"
                 class="project-thumbnail"
+                width="640"
+                height="400"
                 loading="lazy"
               />
 
@@ -875,6 +877,8 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    document.body.style.overflow = '';
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = '';
+    }
   }
 }

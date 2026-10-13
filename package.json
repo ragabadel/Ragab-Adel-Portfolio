@@ -2,7 +2,7 @@
   "name": "ragab-adel-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Professional portfolio for Ragab Adel - Junior .NET Developer with an IT infrastructure background",
+  "description": "Portfolio of Ragab Adel: Junior .NET development with hands-on Windows Server, FortiGate firewall, networking, and systems support experience.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 192.168.20.44 --port 4200",
@@ -12,7 +12,9 @@
     "watch": "ng build --watch --configuration development",
     "typecheck": "node ./node_modules/typescript/bin/tsc --noEmit -p tsconfig.app.json",
     "validate:assets": "node scripts/validate-assets.mjs",
+    "validate:seo": "node scripts/validate-seo.mjs",
     "check": "npm run typecheck && npm run validate:assets",
+    "check:production": "npm run build && npm run validate:seo",
     "test": "npm run check"
   },
   "dependencies": {
@@ -21,7 +23,9 @@
     "@angular/core": "21.2.23",
     "@angular/forms": "21.2.23",
     "@angular/platform-browser": "21.2.23",
+    "@angular/platform-server": "21.2.23",
     "@angular/router": "21.2.23",
+    "@angular/ssr": "^21.2.24",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "0.15.1"

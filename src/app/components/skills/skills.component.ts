@@ -16,7 +16,7 @@ import { IconComponent } from '../../shared/components/icon.component';
           <span class="section-tag">Technical Competencies</span>
           <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
           <p class="section-subtitle">
-            Development skills come first, supported by hands-on experience in IT infrastructure, automation, systems, and networking.
+            Development skills plus hands-on Windows Server, FortiGate, networking, infrastructure automation, and technical support experience.
           </p>
         </div>
 
@@ -37,10 +37,12 @@ import { IconComponent } from '../../shared/components/icon.component';
               <div class="category-icon-indicator" [ngSwitch]="cat.id">
                 <app-icon *ngSwitchCase="'backend'" name="server" [size]="22"></app-icon>
                 <app-icon *ngSwitchCase="'database'" name="database" [size]="22"></app-icon>
-                <app-icon *ngSwitchCase="'networking-security'" name="shield-check" [size]="22"></app-icon>
-                <app-icon *ngSwitchCase="'windows-infrastructure'" name="server" [size]="22"></app-icon>
-                <app-icon *ngSwitchCase="'automation'" name="code" [size]="22"></app-icon>
+                <app-icon *ngSwitchCase="'programming-design'" name="code" [size]="22"></app-icon>
+                <app-icon *ngSwitchCase="'frontend'" name="code" [size]="22"></app-icon>
                 <app-icon *ngSwitchCase="'frontend-tools'" name="code" [size]="22"></app-icon>
+                <app-icon *ngSwitchCase="'systems-administration'" name="server" [size]="22"></app-icon>
+                <app-icon *ngSwitchCase="'firewall-networking'" name="shield-check" [size]="22"></app-icon>
+                <app-icon *ngSwitchCase="'infrastructure-automation'" name="code" [size]="22"></app-icon>
                 <app-icon *ngSwitchDefault name="shield-check" [size]="22"></app-icon>
               </div>
             </div>
@@ -64,9 +66,9 @@ import { IconComponent } from '../../shared/components/icon.component';
             <app-icon name="code" [size]="28"></app-icon>
           </div>
           <div class="banner-content">
-            <h4 class="banner-title">Current Career Focus: .NET Development</h4>
+            <h4 class="banner-title">Development &amp; IT Administration Focus</h4>
             <p class="banner-text">
-              Building stronger backend and web development experience with C#, ASP.NET Core, Web API, Entity Framework Core, and SQL Server, while using my IT background as an operational advantage.
+              Open to Junior .NET and backend opportunities, as well as System Administrator and Firewall Administrator roles aligned with my hands-on experience.
             </p>
           </div>
         </div>
@@ -270,12 +272,13 @@ export class SkillsComponent implements OnInit {
     this.portfolioService.getSkillCategories().subscribe(data => {
       const displayOrder = new Map([
         ['backend', 0],
-        ['database', 1],
-        ['frontend-tools', 2],
-        ['automation', 3],
-        ['windows-infrastructure', 4],
-        ['networking-security', 5],
-        ['cctv-support', 6]
+        ['programming-design', 1],
+        ['database', 2],
+        ['frontend', 3],
+        ['frontend-tools', 4],
+        ['systems-administration', 5],
+        ['firewall-networking', 6],
+        ['infrastructure-automation', 7]
       ]);
 
       this.skillCategories = [...data].sort(

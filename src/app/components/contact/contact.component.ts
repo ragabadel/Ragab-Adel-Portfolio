@@ -17,7 +17,7 @@ import { IconComponent } from '../../shared/components/icon.component';
           <span class="section-tag">Get in Touch</span>
           <h2 class="section-title">Let's <span class="gradient-text">Talk</span></h2>
           <p class="section-subtitle">
-            For junior .NET, backend, or software development opportunities, reach me directly by email, phone, or WhatsApp. System administration and network security support roles are also welcome.
+            For Junior .NET Developer, Backend Developer, System Administrator, or Firewall Administrator opportunities, reach me by email, phone, WhatsApp, or LinkedIn.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ import { IconComponent } from '../../shared/components/icon.component';
               <div class="contact-card-details">
                 <span class="contact-type">Direct Phone</span>
                 <span class="contact-val">{{ profile?.phone || '+20 114 912 0925' }}</span>
-                <span class="contact-hint">Cairo, Egypt (GMT+2 / EEST)</span>
+                <span class="contact-hint">Cairo, Egypt</span>
               </div>
               <app-icon name="external-link" [size]="16" customClass="card-arrow"></app-icon>
             </a>
@@ -79,7 +79,7 @@ import { IconComponent } from '../../shared/components/icon.component';
               <div class="contact-card-details">
                 <span class="contact-type">Location &amp; Availability</span>
                 <span class="contact-val">{{ profile?.location || 'Cairo, Egypt' }}</span>
-                <span class="contact-hint">Available for Remote, Hybrid &amp; On-site Roles</span>
+                <span class="contact-hint">Open to .NET, systems, and firewall administration roles</span>
               </div>
             </div>
 

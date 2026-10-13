@@ -1,5 +1,7 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -71,24 +73,17 @@ export class AppComponent implements OnInit {
   private titleService = inject(Title);
   private metaService = inject(Meta);
   private portfolioService = inject(PortfolioService);
+  private document = inject(DOCUMENT);
+  private platformId = inject(PLATFORM_ID);
 
   ngOnInit(): void {
     const data = this.portfolioService.getPortfolioDataSnapshot();
     const name = data.profile.professionalName;
-    const role = data.profile.primaryRole;
+    this.titleService.setTitle(`${name} | .NET Developer & IT Administrator`);
 
-    // Page Title
-    this.titleService.setTitle(`${name} | ${role}`);
-
-    // SEO Meta Tags
     this.metaService.updateTag({
       name: 'description',
-      content: 'Junior .NET Developer transitioning from IT support and infrastructure into software development, focused on C#, ASP.NET Core, Web API, Entity Framework Core, and SQL Server.'
-    });
-
-    this.metaService.updateTag({
-      name: 'keywords',
-      content: 'Ragab Adel, Junior .NET Developer, C# Developer, ASP.NET Core, Web API, Entity Framework Core, SQL Server, IT Support, System Administration, Network Security, Cairo Egypt'
+      content: 'Portfolio of Ragab Adel in Cairo: Junior .NET development plus hands-on Windows Server, FortiGate firewall, network, systems support, and automation experience.'
     });
 
     this.metaService.updateTag({
@@ -96,13 +91,33 @@ export class AppComponent implements OnInit {
       content: data.profile.fullName
     });
 
-    // OpenGraph Tags
-    this.metaService.updateTag({ property: 'og:title', content: `${name} | ${role}` });
+    this.metaService.updateTag({ property: 'og:title', content: `${name} | .NET Developer & IT Administrator` });
     this.metaService.updateTag({
       property: 'og:description',
-      content: 'Junior .NET Developer with hands-on IT support and infrastructure experience, building practical ASP.NET Core applications and APIs.'
+      content: '.NET development plus hands-on Windows Server, FortiGate firewall, networking, systems support, and infrastructure automation experience.'
     });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
     this.metaService.updateTag({ property: 'og:locale', content: 'en_US' });
+
+    if (isPlatformBrowser(this.platformId)) {
+      this.setRuntimeUrls(data.profile.avatarPath);
+    }
+  }
+
+  private setRuntimeUrls(imagePath: string): void {
+    const pageUrl = new URL('/', this.document.location.origin).href;
+    const imageUrl = new URL(imagePath, pageUrl).href;
+    let canonical = this.document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+
+    if (!canonical) {
+      canonical = this.document.createElement('link');
+      canonical.rel = 'canonical';
+      this.document.head.appendChild(canonical);
+    }
+
+    canonical.href = pageUrl;
+    this.metaService.updateTag({ property: 'og:url', content: pageUrl });
+    this.metaService.updateTag({ property: 'og:image', content: imageUrl });
+    this.metaService.updateTag({ name: 'twitter:image', content: imageUrl });
   }
 }

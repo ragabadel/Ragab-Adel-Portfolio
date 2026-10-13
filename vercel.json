@@ -1,11 +1,5 @@
 {
   "version": 2,
   "framework": "angular",
-  "outputDirectory": "dist/ragab-adel-portfolio/browser",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "outputDirectory": "dist/ragab-adel-portfolio/browser"
 }

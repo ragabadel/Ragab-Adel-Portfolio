@@ -21,7 +21,7 @@ import { IconComponent } from '../../shared/components/icon.component';
               <span class="brand-badge">.NET</span>
             </a>
             <p class="brand-tagline">
-              Junior .NET Developer transitioning from hands-on IT support and infrastructure into software development.
+              Junior .NET Developer with hands-on Windows Server, Fortinet FortiGate, networking, and IT support experience.
             </p>
           </div>
 

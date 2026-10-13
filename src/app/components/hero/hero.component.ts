@@ -19,7 +19,7 @@ import { IconComponent } from '../../shared/components/icon.component';
           <!-- Status Pill -->
           <div class="status-badge" role="status">
             <span class="status-pulse" aria-hidden="true"></span>
-            <span class="status-text">Open to Junior .NET Developer &amp; Backend Roles</span>
+            <span class="status-text">Open to .NET, System Administrator &amp; Firewall Administrator Roles</span>
           </div>
 
           <!-- Developer Name & Titles -->
@@ -44,12 +44,12 @@ import { IconComponent } from '../../shared/components/icon.component';
           <!-- Core Tech Pills (First thing recruiter sees) -->
           <div class="hero-tech-stack" aria-label="Core Technology Focus">
             <span class="stack-badge stack-csharp">C#</span>
-            <span class="stack-badge stack-dotnet">.NET</span>
             <span class="stack-badge stack-asp">ASP.NET Core</span>
             <span class="stack-badge stack-api">Web API</span>
-            <span class="stack-badge stack-ef">EF Core</span>
             <span class="stack-badge stack-sql">SQL Server</span>
-            <span class="stack-badge stack-rest">IT Background</span>
+            <span class="stack-badge stack-ef">Windows Server</span>
+            <span class="stack-badge stack-dotnet">Fortinet FortiGate</span>
+            <span class="stack-badge stack-rest">Network Support</span>
           </div>
 
           <!-- Action CTA Buttons -->
@@ -125,10 +125,13 @@ import { IconComponent } from '../../shared/components/icon.component';
           <div class="visual-card-wrapper">
             <div class="avatar-ring">
             <img
-              [src]="profile?.avatarPath || 'assets/images/profile/ragab-adel-portfolio-profile.png'"
+              [src]="profile?.avatarPath || 'assets/images/profile/ragab-adel-portfolio-profile.webp'"
               alt="Ragab Adel - Junior .NET Developer with IT infrastructure experience"
               class="avatar-image"
+              width="800"
+              height="800"
               loading="eager"
+              fetchpriority="high"
             />
             </div>
             <!-- Floating Mini Card: Location -->
@@ -139,7 +142,7 @@ import { IconComponent } from '../../shared/components/icon.component';
             <!-- Floating Mini Card: Professional Focus -->
             <div class="floating-badge badge-backend">
               <span class="indicator-dot"></span>
-              <span>Transitioning to .NET</span>
+              <span>Development &amp; IT Support</span>
             </div>
           </div>
         </div>
